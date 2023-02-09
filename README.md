@@ -69,7 +69,7 @@ and change your time in ```helpers/checkers.py```
 ```python
 start_time = now.replace(hour=20, minute=0, second=0, microsecond=0) # Your start tMW
 end_time = now.replace(hour=23, minute=0, second=0, microsecond=0) # Your end time MW
-Msk = now + timedelta(hours=3) # TZ in delta
+TZ = now + timedelta(hours=3) # TZ in delta
 ```
 
 ### Running

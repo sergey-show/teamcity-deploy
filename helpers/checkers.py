@@ -16,9 +16,9 @@ class ProdTime(object):
         now = datetime.utcnow()
         start_time = now.replace(hour=20, minute=0, second=0, microsecond=0)
         end_time = now.replace(hour=23, minute=0, second=0, microsecond=0)
-        Msk = now + timedelta(hours=3)
+        TZ = now + timedelta(hours=3)
         if self.env in ("PROD"):
-            if (Msk > start_time) and ( Msk < end_time):
+            if (TZ > start_time) and ( TZ < end_time):
                 valid = True
         else:
             valid = True
