@@ -20,4 +20,15 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint --module-rgx=all \
+        --const-rgx=all \
+        --class-rgx=all \
+        --function-rgx=all \
+        --method-rgx=all \ 
+        --attr-rgx=all \
+        --argument-rgx=all \
+        --variable-rgx=all \
+        --class-attribute-rgx=all \
+        --class-const-rgx=all \
+        --inlinevar-rgx=all \
+        --typevar-rgx=all \ $(git ls-files '*.py')
