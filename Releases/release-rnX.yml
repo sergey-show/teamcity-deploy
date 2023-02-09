@@ -1,0 +1,3 @@
+components:
+  # Format name of your application and branch or tag
+  MyApp: master

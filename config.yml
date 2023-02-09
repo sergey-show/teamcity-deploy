@@ -1,0 +1,5 @@
+teamcity:
+  url: https://teamcity.local # Your Teamsity host
+  api_token: "" # Yout API_TOKEN TEAMCITY
+checkTime: True
+     
