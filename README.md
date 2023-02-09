@@ -66,7 +66,7 @@ Script gets all files amd merged in one dictionary
 If your company use maintenance window for deploy you can set boolean value is 'True' in ```config.yml``` for key ```checkTime```
 and change your time in ```helpers/checkers.py```
 
- ```python
+```python
 start_time = now.replace(hour=20, minute=0, second=0, microsecond=0) # Your start tMW
 end_time = now.replace(hour=23, minute=0, second=0, microsecond=0) # Your end time MW
 Msk = now + timedelta(hours=3) # TZ in delta
