@@ -1,7 +1,8 @@
+import os
 from helpers.teamcity import TC
 from helpers.helpers import get_args, getFile, joinServices, TcMappers, GetEnv
 from helpers.release import Release
-import os
+
 
 args = get_args()
 project = args.project
