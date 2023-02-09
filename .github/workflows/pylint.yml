@@ -31,4 +31,5 @@ jobs:
         --class-attribute-rgx=all \
         --class-const-rgx=all \
         --inlinevar-rgx=all \
-        --typevar-rgx=all \ $(git ls-files '*.py')
+        --typevar-rgx=all \
+        $(git ls-files '*.py')
